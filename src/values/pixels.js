@@ -55,7 +55,7 @@ Me.prototype.compare = Value.safe(function compare(operand) {
 
 	if (bothHavePixels) {
 		var difference = this._amount - operand._amount;
-		if (Math.abs(difference) <= 2) return 0;
+		if (Math.abs(difference) <= 1) return 0;
 		else return difference;
 	}
 	else if (neitherHavePixels) {
